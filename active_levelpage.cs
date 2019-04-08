@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-//code to open new levels on levels page
+
+//----------------CODE TO OPEN NEW LEVELS ON LEVELS PAGE----------------//
+
 
 public class active_levelpage : MonoBehaviour {
 
