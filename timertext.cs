@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
+//-------------------TIMER TEXT CODE-------------------//
+
+
 public class timertext : MonoBehaviour {
 
     public Text Timer;
