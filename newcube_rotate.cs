@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//-------------CODE TO ROTATE THE CUBE-------------//
+
+
 public class newcube_rotate : MonoBehaviour
 {
 
