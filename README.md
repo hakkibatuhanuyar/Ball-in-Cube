@@ -1,2 +1,2 @@
 # Ball-in-Cube
-main codes of Android mobile game
+Main codes of Android mobile game
