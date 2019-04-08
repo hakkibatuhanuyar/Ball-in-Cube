@@ -6,12 +6,10 @@ using GooglePlayGames;
 using UnityEngine.SocialPlatforms;
 
 
-public class levelfinish : MonoBehaviour {
+//-------------------CODE TO COMPLETE THE LEVEL-------------------//
 
-    #region PUBLIC_VAR
-    public string leaderboard; //buraya tablo kimliğini tanımlamanız gerekiyor.
-    #endregion
-    #region DEFAULT_UNITY_CALLBACKS
+
+public class levelfinish : MonoBehaviour {
 
     public GameObject Nextlevelmenu;
 
@@ -28,11 +26,7 @@ public class levelfinish : MonoBehaviour {
     public void Start()
     {
 
-        PlayGamesPlatform.DebugLogEnabled = true;
-        PlayGamesPlatform.Activate();
-
     }
-    #endregion
 
     public void OnTriggerExit(Collider Exitpart)
     {
@@ -79,22 +73,6 @@ public class levelfinish : MonoBehaviour {
             }
 
         }
-
-        if (Social.localUser.authenticated)
-        {
-            Social.ReportScore(milliseconds, leaderboard, (bool success) =>
-            {
-                if (success)
-                {
-                    Debug.Log("Update Score Success");
-                }
-                else
-                {
-                    Debug.Log("Update Score Fail");
-                }
-            });
-        }
-
 
     }
 
